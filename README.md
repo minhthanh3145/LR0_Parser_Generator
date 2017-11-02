@@ -9,15 +9,15 @@
 
 ## Fix bugs:
 - i mistakenly thought that the first production in grammar.txt is the only initial production, but through test cases it was endowed upom me that this is not the case. We can have multiple start-symbol productions. Therefore a change has been made to allow users to foretell the parser how many start-symbol productions there are.
-- The error handling is integrated, reduce/reduce conflicts and shift/reduce conflicts are brutely detected. ( need more elegant solution, i suppose ).
+
 
 ## What does this program do ?
 - It takes in a grammar description and an input and verifies wether the input belongs to the grammar. In practice, output of parsers should be AST or parse tree, however i skipped that part since building the parse is trivial. Such functionality will be integrated in future parser projects.
 
 **Tasks finished**:
-- [x] Finish the project.
-- [X] Error report.
-- [ ] Reconsider the data structures.
+- [x] Finish the project. ( it generates correct output )
+- [X] Error report. ( shift/reduce conflicts and reduce/reduce conflicts detection )
+- [ ] Reconsider the data structures and functions organization.
 
 ## The parser consists of the following classes:
 
@@ -27,7 +27,7 @@
 
 -**State**: A DFA state is the result of computing closure on an item.
 
--**Stack**: The primary interface of the parser. Stack contains DFA states. I noticed some textbooks say that there should be intermittent occurences of states and symbols, but i figured it would just be easier to maintain the states alone and symbols can be stored in a single variable. 
+-**Stack**: The primary interface of the parser. Stack contains DFA states. I noticed some textbooks say that there should be interleaving occurences of states and symbols, but i figured it would just be easier to maintain the states alone and symbols can be stored in a single variable. 
 
 -**Parser**: The main class that reads the list of productions, constructing the automata, the parsing table and dictates the behavior of the stack and errors handling.
 

@@ -1,6 +1,8 @@
 
 # Implementation of LR(0) shift-reduce parser generator.
+- Visit my [blog post](https://dafuqisthatblog.wordpress.com/2017/10/12/compiler-theories-parser-bottom-up-parsers-slr-lr1-lalr/) for the theories of bottom-up parsers.
 
+## Basic info
 - **OS**: Windows.
 - **Language**: Java.
 - **Third library**: Google Guava. The library is included in the repository. However you have to manually add the JAR file into the library yourself.

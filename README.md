@@ -1,6 +1,7 @@
 
 # Implementation of LR(0) shift-reduce parser generator.
 - Visit my [blog post](https://dafuqisthatblog.wordpress.com/2017/10/12/compiler-theories-parser-bottom-up-parsers-slr-lr1-lalr/) for the theories of bottom-up parsers.
+- Sequel: [LR(1) shift-reduce parser generator](https://github.com/minhthanh3145/LR1_Parser_Generator).
 
 ## Basic info
 - **OS**: Windows.
